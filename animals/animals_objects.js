@@ -3,6 +3,13 @@
 window.addEventListener("DOMContentLoaded", start);
 
 const allAnimals = [];
+// MY PART
+const Animal = { 
+    name: "",
+    desc: "",
+    type: "unknown",
+    age: 0
+};
 
 function start( ) {
     console.log("ready");
@@ -23,8 +30,17 @@ function loadJSON() {
 function prepareObjects( jsonData ) {
     jsonData.forEach( jsonObject => {
         // TODO: Create new object with cleaned data - and store that in the allAnimals array
-        
+        // MY PART
+        const animal = Object.create(Animal);
+        // texts instead of text and skip "the"
+        const texts = jsonObject.fullname.split(" ");
+        animal.name = texts[0];
+        animal.desc = texts[2];
+        animal.type = texts[3];
+        animal.age = jsonObject.age;
+
         // TODO: MISSING CODE HERE !!!
+        allAnimals.unshift(animal);
     });
 
     displayList();
