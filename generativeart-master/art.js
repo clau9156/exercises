@@ -13,14 +13,22 @@ for(let i=100; i<300; i+=20) {
 
 // 2 0 90 10 box rotate
 // for(let i=0; i<90; i+=10) {
-//     // create rotating boxs!
-//     const box = document.createElement("div");
-//     box.classList.add("box");
-    
-//     box.style.transform.rotate = i + "deg";
-//     document.querySelector("artwork2").append(box);
+    // create rotating boxs!
+    // const box = document.createElement("div");
+    // let width = 20 + "px";
+    // let height = 20 + "px";
+    // box.classList.add("box");
+//     // `translate(${i}-50)`;
+//     // box.style.transform = rotate(i + deg);
+//     // box.style.transform = 'rotate(${i}deg)';
+//     box.style.transform = rotate(i + "deg");
+    // box.style.rotate = i + "deg";
+    // box.style.width = 10 + "px";
+    // box.style.height = 10 + "px";
+    // box.style.transform = rotate("90" + deg);
+    // document.querySelector("artwork2").append(box);
 // } 
-
+'rotate(' + this.options.rotationAngle + 'deg)'
 // 3 0 200 10 circle width and height
 for(let i=0; i<200; i+=10) {
     // create circles!
@@ -34,10 +42,13 @@ for(let i=0; i<200; i+=10) {
 
 // 4 -90 90 20 box translate x and y
 // for(let i=-90; i<90; i=20) {
+    // box translate x and y
     // const box = document.createElement("div");
-    // box.style.transform = `translateX(${i} + "px")`;
-    // box.style.transform = `translateY(${i} + "px")`;
-    // box.style.transform = translate(${i}x,${i}y);
+//     // box.style.transform = `translateX(${i} + "px")`;
+//     // box.style.transform = `translateY(${i} + "px")`;
+//     // box.style.transform = translate(${i}x,${i}y);
+//     box.style.transform = translate(i , i);
+//     document.querySelector("#artwork4").append(box);
 // }
 
 
